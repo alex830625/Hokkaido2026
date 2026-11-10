@@ -190,5 +190,37 @@
     "file": "image-32.jpg",
     "bytes": 350840,
     "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://www.jr-inn.jp/hakodate/img/rooms/room3.png",
+    "file": "stay-jrinn-second-room.png",
+    "bytes": 915139,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://relabo.com/files/images/home/img_guide3.webp",
+    "file": "stay-relabo-exterior.webp",
+    "bytes": 23418,
+    "content_type": "image/webp"
+  },
+  {
+    "url": "https://aomori-tourism.com/lsc/api/photo/?src=8654",
+    "file": "a-factory-aomori.jpg",
+    "bytes": 175091,
+    "content_type": "image/jpeg",
+    "note": "Aomori official tourism photo library; page permits use for tourism promotion."
+  },
+  {
+    "url": "https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/0031/10031_2_l.jpg",
+    "file": "market-hakodate.jpg",
+    "bytes": 324570,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://tblg.k-img.com/restaurant/images/Rvw/314139/640x640_rect_0ab6b4088e70f32ccfcc509bebacd1c3.jpg",
+    "file": "kantaro-sushi.jpg",
+    "bytes": 94232,
+    "content_type": "image/jpeg",
+    "note": "Photo listed on Tabelog for Kantaro Goryokaku Park; image hosted by Tabelog."
   }
 ]
