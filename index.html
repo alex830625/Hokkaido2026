@@ -104,8 +104,8 @@
     {id:'d1212',date:'2026-12-12',title:'函館抵達・港町初見',memo:'航班 16:30 抵達函館。入境與行李時間以現場為準；第一晚以入住及車站附近晚餐為主，若延誤就近用餐。',items:[
       {time:'16:30',name:'函館機場抵達',place:'函館空港',transport:'入境、領行李後搭機場巴士或計程車往函館站方向；巴士乘車處依航廈站牌為準。',mapQuery:'Hakodate Airport'},
       {time:'約18:00',name:'JR INN Hakodate 入住',place:'JR INN Hakodate',transport:'機場到函館站約 20–40 分鐘，依路線及路況而異。',mapQuery:'JR INN Hakodate'},
-      {time:'19:00',name:'晚餐｜大門橫丁・龍鳳黃金鹽味拉麵',place:'大門橫丁',transport:'從函館站步行約 5 分鐘。大門橫丁聚集 20 多間小店；可試龍鳳招牌「黃金鹽味拉麵」，也可看現場座位選海鮮或關東煮。各店營業時間與公休日不同，當晚請以現場公告為準。',mapQuery:'Raamen Ryuuhou Daimon Yokocho Hakodate',image:'https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1178/11178_3_l.jpg'},
-      {time:'備案',name:'風雪或抵達延誤｜函館站前 HAKOViVA',place:'函館站前',transport:'從函館站步行約 1 分鐘，室內用餐較不受風雪影響；有海鮮、成吉思汗等選擇。店家各自營業，抵達較晚時先確認當晚仍營業的店。',mapQuery:'HAKOViVA Hakodate',image:'https://storage.googleapis.com/studio-design-asset-files/projects/6kq9zZ3Lap/s-2000x1334_v-frms_webp_9a38eacf-789e-42ef-83ce-1beb2b61a182_small.webp'}]},
+      {time:'19:00',name:'晚餐｜大門橫丁・龍鳳黃金鹽味拉麵',place:'大門橫丁',transport:'從函館站步行約 5 分鐘。大門橫丁聚集 20 多間小店；可試龍鳳招牌「黃金鹽味拉麵」，也可看現場座位選海鮮或關東煮。各店營業時間與公休日不同，當晚請以現場公告為準。',mapQuery:'Raamen Ryuuhou Daimon Yokocho Hakodate',image:'images/image-01.jpg'},
+      {time:'備案',name:'風雪或抵達延誤｜函館站前 HAKOViVA',place:'函館站前',transport:'從函館站步行約 1 分鐘，室內用餐較不受風雪影響；有海鮮、成吉思汗等選擇。店家各自營業，抵達較晚時先確認當晚仍營業的店。',mapQuery:'HAKOViVA Hakodate',image:'images/image-02.webp'}]},
     {id:'d1213',date:'2026-12-13',title:'函館神社・元町・函館山夜景',memo:'景點依步行狀況彈性取捨；函館山優先安排在日落前後，纜車可能受風雪影響。',items:[
       {time:'08:00',name:'世壽屋早餐',place:'函館 世壽屋',transport:'從函館站搭市電或計程車至市區，步行依店址安排。',mapQuery:'世壽屋 函館'},
       {time:'09:30',name:'住三吉神社',place:'住三吉神社 函館',transport:'建議搭計程車或市電接近後步行；冬季路面結冰，穿防滑鞋。',mapQuery:'住三吉神社 函館'},
@@ -162,52 +162,54 @@
   ];
   function upgradeItineraryImages(days){
     const photos=[
-      [/函館機場|起飛回台灣/, 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Hakodate-Airport-02.jpg'],
-      [/JR INN Hakodate/, 'https://www.jr-inn.jp/hakodate/img/rooms/room2.png'],
-      [/大門橫丁|龍鳳黃金鹽味/, 'https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1178/11178_3_l.jpg'],
-      [/HAKOViVA/, 'https://storage.googleapis.com/studio-design-asset-files/projects/6kq9zZ3Lap/s-2000x1334_v-frms_webp_9a38eacf-789e-42ef-83ce-1beb2b61a182_small.webp'],
-      [/世壽屋/, 'https://img.retty.me/img_repo/l/01/20622696.jpg'],
-      [/住三吉神社/, 'https://hakodate-kankou.com/media/2021/10/IMG_3716.jpg'],
-      [/函館八幡宮/, 'https://www.hakodate.travel/en/wp-content/uploads/2022/11/Hakodate_Hachimangu_Shrine-2-1024x768.jpg'],
-      [/午餐/, 'https://sports-hakodate.jp/images/hakoreco08_img.png'],
-      [/元町教會群|八幡坂/, 'https://static.gltjp.com/glt/data/article/12000/11745/20180205_191642_518a03c5_w1920.webp'],
-      [/函館山展望台/, 'https://images.locationscout.net/2022/01/mt-hakodate-observatory-hokkaido-japan-japan-p15f.webp?h=1400&q=83'],
-      [/金森紅磚|聖誕夢幻節/, 'https://static.gltjp.com/glt/data/article/21000/20462/20231008_112414_7f4bdea9_w1920.webp'],
-      [/青森縣立美術館/, 'https://aomori-tourism.com/lsc/upfile/spot/0000/1664/1664_104_m.jpg'],
-      [/味之札幌大西|味の札幌/, 'https://cdn-ak.f.st-hatena.com/images/fotolife/t/tatebayashihappy/20191022/20191022200828.jpg'],
-      [/三內丸山/, 'https://my10.jp/images/sannai-maruyama-ruins-01.jpg'],
-      [/Wa Rasse|ねぶたの家/, 'https://hoshinoresorts.com/jp/sp/noresoreaomoritabi_campaign/assets/images/aomoritabi/article/post1/section_4-1.jpg'],
-      [/A-FACTORY|青い海公園/, 'https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2025-05/aomori-city_13.jpg?itok=wgPWxkEq'],
-      [/廣田神社/, 'https://cdn-ak.f.st-hatena.com/images/fotolife/m/masa-muro/20230927/20230927180733.jpg'],
-      [/青森出發|青森站|青森返回|前往新青森|青森.*採買|八戶返回青森|Aomori Station/, 'https://aomori-tourism.com/lsc/api/photo/?src=8262'],
-      [/RELABO/, 'https://aomori-tourism.com/lsc/upfile/spot/0000/0810/810_1_l.jpg'],
-      [/津輕五所原|買票、步行轉津輕/, 'https://aomori-tourism.com/lsc/api/photo/?src=1038'],
-      [/火爐列車/, 'https://aomori-tourism.com/lsc/api/photo/?src=1038'],
-      [/陸奧鶴田|陸奥鶴田/, 'https://aomori-tourism.com/lsc/upfile/spot/0000/9387/9387_1_l.jpg'],
-      [/鶴之舞橋/, 'https://aomori-tourism.com/lsc/upfile/spot/0000/9387/9387_1_l.jpg'],
-      [/弘前公園/, 'https://cdn.jeepe.jp/uploads/public_image/image/1791/normal_aa06acd2-95dc-460e-b139-a95a9d126e23.jpg'],
-      [/蕪島神社/, 'https://assets.st-note.com/production/uploads/images/175464346/rectangle_large_type_2_3ee8b32c2c163ae1afe06c818c4b8a50.jpeg?fit=bounds&height=2000&quality=85&width=2000'],
-      [/八食中心/, 'https://rimage.gnst.jp/livejapan.com/public/article/detail/a/30/00/a3000038/img/en/a3000038_parts_5d428edb34244.jpg?20200721194403=&q=80'],
-      [/Dormy Inn/, 'https://img.travel.rakuten.co.jp/share/HOTEL/187620/187620.jpg'],
-      [/八甲田纜車|八甲田ロープウェー/, 'https://aomori-tourism.com/lsc/upfile/articleDetail/0000/2282/2282_3_l.jpg'],
-      [/搭巴士回青森|JR Bus|青森站搭/, 'https://aomori-tourism.com/lsc/upfile/spot/0000/0810/810_1_l.jpg'],
-      [/五稜郭塔|五稜郭公園/, 'https://graceblog.tw/wp-content/uploads/2023/01/goryokaku-tower-8210.jpg'],
-      [/函太郎/, 'https://en.kantaro-hakodate.com/images/index_content_pic06.jpg'],
-      [/大沼公園.*車|大沼公園駅/, 'https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/0300/10300_6_l.jpg'],
-      [/大沼公園廣場|駒岳/, 'https://media.hoshinoresorts.com/image/authenticated/s--KQrTr4vW--/c_fill%2Cg_auto%2Ch_630%2Cw_1200/f_auto%2Cq_auto/v1728956687/056_%E5%86%AC_%E6%B9%96%E6%9C%88%E6%A9%8B%E3%81%A8%E9%A7%92%E3%82%B1%E5%B2%B3_fra5wx.jpg'],
-      [/大沼周邊午餐/, 'https://hakodate-kankou.com/media/2021/10/IMG_3694-1.jpg'],
-      [/大沼.*散步/, 'https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/0300/10300_6_l.jpg'],
-      [/函館朝市/, 'https://sports-hakodate.jp/images/hakoreco08_img.png'],
-      [/函館站周邊最後採買|函館站|Hakodate Station/, 'https://www.visit-hokkaido.jp/lsc/upfile/courseDetail/0000/1101/1101_1_l.jpg']
+      [/函館機場|起飛回台灣/, 'images/image-03.jpg'],
+      [/JR INN Hakodate/, 'images/image-04.png'],
+      [/大門橫丁|龍鳳黃金鹽味/, 'images/image-01.jpg'],
+      [/HAKOViVA/, 'images/image-02.webp'],
+      [/世壽屋/, 'images/image-05.jpg'],
+      [/住三吉神社/, 'images/image-06.jpg'],
+      [/函館八幡宮/, 'images/image-07.jpg'],
+      [/午餐/, 'images/image-08.png'],
+      [/元町教會群|八幡坂/, 'images/image-09.webp'],
+      [/函館山展望台/, 'images/image-10.jpg'],
+      [/金森紅磚|聖誕夢幻節/, 'images/image-11.webp'],
+      [/青森縣立美術館/, 'images/image-12.jpg'],
+      [/味之札幌大西|味の札幌/, 'images/image-13.jpg'],
+      [/三內丸山/, 'images/image-14.jpg'],
+      [/Wa Rasse|ねぶたの家/, 'images/image-15.jpg'],
+      [/A-FACTORY|青い海公園/, 'images/image-15.jpg'],
+      [/廣田神社/, 'images/image-17.jpg'],
+      [/青森出發|青森站|青森返回|前往新青森|青森.*採買|八戶返回青森|Aomori Station/, 'images/image-18.jpg'],
+      [/RELABO/, 'images/image-18.jpg'],
+      [/津輕五所原|買票、步行轉津輕/, 'images/image-20.jpg'],
+      [/火爐列車/, 'images/image-20.jpg'],
+      [/陸奧鶴田|陸奥鶴田/, 'images/image-21.jpg'],
+      [/鶴之舞橋/, 'images/image-21.jpg'],
+      [/弘前公園/, 'images/image-22.jpg'],
+      [/蕪島神社/, 'images/image-23.jpg'],
+      [/八食中心/, 'images/image-24.jpg'],
+      [/Dormy Inn/, 'images/image-25.jpg'],
+      [/八甲田纜車|八甲田ロープウェー/, 'images/image-26.jpg'],
+      [/搭巴士回青森|JR Bus|青森站搭/, 'images/image-18.jpg'],
+      [/五稜郭塔|五稜郭公園/, 'images/image-27.jpg'],
+      [/函太郎/, 'images/image-08.png'],
+      [/大沼公園.*車|大沼公園駅/, 'images/image-29.jpg'],
+      [/大沼公園廣場|駒岳/, 'images/image-30.jpg'],
+      [/大沼周邊午餐/, 'images/image-31.jpg'],
+      [/大沼.*散步/, 'images/image-29.jpg'],
+      [/函館朝市/, 'images/image-08.png'],
+      [/函館站周邊最後採買|函館站|Hakodate Station/, 'images/image-32.jpg']
     ];
-    const dayFallback={d1212:'https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1178/11178_3_l.jpg',d1213:'https://static.gltjp.com/glt/data/article/12000/11745/20180205_191642_518a03c5_w1920.webp',d1214:'https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2025-05/aomori-city_13.jpg?itok=wgPWxkEq',d1215:'https://aomori-tourism.com/lsc/api/photo/?src=1038',d1216:'https://aomori-tourism.com/lsc/upfile/spot/0000/1664/1664_104_m.jpg',d1217:'https://aomori-tourism.com/lsc/upfile/articleDetail/0000/2282/2282_3_l.jpg',d1218:'https://graceblog.tw/wp-content/uploads/2023/01/goryokaku-tower-8210.jpg',d1219:'https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/0300/10300_6_l.jpg',d1220:'https://sports-hakodate.jp/images/hakoreco08_img.png'};
+    const dayFallback={d1212:'images/image-01.jpg',d1213:'images/image-09.webp',d1214:'images/image-15.jpg',d1215:'images/image-20.jpg',d1216:'images/image-12.jpg',d1217:'images/image-26.jpg',d1218:'images/image-27.jpg',d1219:'images/image-29.jpg',d1220:'images/image-08.png'};
     for(const day of days||[])for(const item of day.items||[]){if(item.image)continue;const text=[item.name,item.place,item.mapQuery].join(' ');const match=photos.find(([re])=>re.test(text));item.image=match?.[1]||dayFallback[day.id]||''}
   }
   upgradeItineraryImages(initialDays);
   const defaults={version:VERSION,tab:'trip',selectedDay:'d1212',days:initialDays,people:[],expenses:[],history:[],rate:0.218,rateUpdated:null,rateSource:'預設參考值；可更新線上匯率或手動修改',quickJpy:'',quickTwd:'',expenseDraft:null,dayDraft:null,savedAt:null};
   let state=loadState();
-  function upgradeFirstNight(days){const day=days.find(d=>d.id==='d1212');if(!day)return;day.items=Array.isArray(day.items)?day.items:[];const additions=[{time:'19:00',name:'晚餐｜大門橫丁・龍鳳黃金鹽味拉麵',place:'大門橫丁',transport:'從函館站步行約 5 分鐘。大門橫丁聚集 20 多間小店；可試龍鳳招牌「黃金鹽味拉麵」，也可看現場座位選海鮮或關東煮。各店營業時間與公休日不同，當晚請以現場公告為準。',mapQuery:'Raamen Ryuuhou Daimon Yokocho Hakodate',image:'https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1178/11178_3_l.jpg'},{time:'備案',name:'風雪或抵達延誤｜函館站前 HAKOViVA',place:'函館站前',transport:'從函館站步行約 1 分鐘，室內用餐較不受風雪影響；有海鮮、成吉思汗等選擇。店家各自營業，抵達較晚時先確認當晚仍營業的店。',mapQuery:'HAKOViVA Hakodate',image:'https://storage.googleapis.com/studio-design-asset-files/projects/6kq9zZ3Lap/s-2000x1334_v-frms_webp_9a38eacf-789e-42ef-83ce-1beb2b61a182_small.webp'}];const old=day.items.findIndex(x=>x.name==='函館站／大門周邊晚餐與採買');if(old>=0)day.items.splice(old,1,...additions);else if(!day.items.some(x=>/大門橫丁|HAKOViVA/.test(x.name||'')))day.items.push(...additions);const main=day.items.find(x=>/大門橫丁/.test(x.name||'')),backup=day.items.find(x=>/HAKOViVA/.test(x.name||''));if(main&&!main.image)main.image=additions[0].image;if(backup&&!backup.image)backup.image=additions[1].image}
-  function loadState(){try{const raw=localStorage.getItem(STORE_KEY);if(!raw)return structuredClone(defaults);const obj=JSON.parse(raw);if(['1.0','1.1','1.2','1.3','1.4','1.5'].includes(obj.version)){const people=Array.isArray(obj.people)?obj.people:[],hasExpenses=Array.isArray(obj.expenses)&&obj.expenses.length>0,legacy=obj.version!=='1.5',days=Array.isArray(obj.days)?obj.days:structuredClone(initialDays);if(people.length===2&&((people[0]==='A'&&people[1]==='B')||(people[0]==='旅伴1'&&people[1]==='旅伴2'))&&!hasExpenses)people.splice(0,people.length);else if(people.length===2&&people[0]==='A'&&people[1]==='B')people.splice(0,2,'旅伴1','旅伴2');if(legacy){upgradeFirstNight(days);upgradeItineraryImages(days)}return {...structuredClone(defaults),...obj,version:VERSION,days,people,expenses:Array.isArray(obj.expenses)?obj.expenses:[],history:Array.isArray(obj.history)?obj.history:[],dayDraft:legacy?null:obj.dayDraft||null}}return structuredClone(defaults)}catch(e){return structuredClone(defaults)}}
+  function upgradeFirstNight(days){const day=days.find(d=>d.id==='d1212');if(!day)return;day.items=Array.isArray(day.items)?day.items:[];const additions=[{time:'19:00',name:'晚餐｜大門橫丁・龍鳳黃金鹽味拉麵',place:'大門橫丁',transport:'從函館站步行約 5 分鐘。大門橫丁聚集 20 多間小店；可試龍鳳招牌「黃金鹽味拉麵」，也可看現場座位選海鮮或關東煮。各店營業時間與公休日不同，當晚請以現場公告為準。',mapQuery:'Raamen Ryuuhou Daimon Yokocho Hakodate',image:'images/image-01.jpg'},{time:'備案',name:'風雪或抵達延誤｜函館站前 HAKOViVA',place:'函館站前',transport:'從函館站步行約 1 分鐘，室內用餐較不受風雪影響；有海鮮、成吉思汗等選擇。店家各自營業，抵達較晚時先確認當晚仍營業的店。',mapQuery:'HAKOViVA Hakodate',image:'images/image-02.webp'}];const old=day.items.findIndex(x=>x.name==='函館站／大門周邊晚餐與採買');if(old>=0)day.items.splice(old,1,...additions);else if(!day.items.some(x=>/大門橫丁|HAKOViVA/.test(x.name||'')))day.items.push(...additions);const main=day.items.find(x=>/大門橫丁/.test(x.name||'')),backup=day.items.find(x=>/HAKOViVA/.test(x.name||''));if(main&&!main.image)main.image=additions[0].image;if(backup&&!backup.image)backup.image=additions[1].image}
+  const legacyImagePaths={"https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1178/11178_3_l.jpg":"images/image-01.jpg","https://storage.googleapis.com/studio-design-asset-files/projects/6kq9zZ3Lap/s-2000x1334_v-frms_webp_9a38eacf-789e-42ef-83ce-1beb2b61a182_small.webp":"images/image-02.webp","https://upload.wikimedia.org/wikipedia/commons/6/6a/Hakodate-Airport-02.jpg":"images/image-03.jpg","https://www.jr-inn.jp/hakodate/img/rooms/room2.png":"images/image-04.png","https://img.retty.me/img_repo/l/01/20622696.jpg":"images/image-05.jpg","https://hakodate-kankou.com/media/2021/10/IMG_3716.jpg":"images/image-06.jpg","https://www.hakodate.travel/en/wp-content/uploads/2022/11/Hakodate_Hachimangu_Shrine-2-1024x768.jpg":"images/image-07.jpg","https://sports-hakodate.jp/images/hakoreco08_img.png":"images/image-08.png","https://static.gltjp.com/glt/data/article/12000/11745/20180205_191642_518a03c5_w1920.webp":"images/image-09.webp","https://images.locationscout.net/2022/01/mt-hakodate-observatory-hokkaido-japan-japan-p15f.webp?h=1400&q=83":"images/image-10.jpg","https://static.gltjp.com/glt/data/article/21000/20462/20231008_112414_7f4bdea9_w1920.webp":"images/image-11.webp","https://aomori-tourism.com/lsc/upfile/spot/0000/1664/1664_104_m.jpg":"images/image-12.jpg","https://cdn-ak.f.st-hatena.com/images/fotolife/t/tatebayashihappy/20191022/20191022200828.jpg":"images/image-13.jpg","https://my10.jp/images/sannai-maruyama-ruins-01.jpg":"images/image-14.jpg","https://hoshinoresorts.com/jp/sp/noresoreaomoritabi_campaign/assets/images/aomoritabi/article/post1/section_4-1.jpg":"images/image-15.jpg","https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2025-05/aomori-city_13.jpg?itok=wgPWxkEq":"images/image-15.jpg","https://cdn-ak.f.st-hatena.com/images/fotolife/m/masa-muro/20230927/20230927180733.jpg":"images/image-17.jpg","https://aomori-tourism.com/lsc/api/photo/?src=8262":"images/image-18.jpg","https://aomori-tourism.com/lsc/upfile/spot/0000/0810/810_1_l.jpg":"images/image-18.jpg","https://aomori-tourism.com/lsc/api/photo/?src=1038":"images/image-20.jpg","https://aomori-tourism.com/lsc/upfile/spot/0000/9387/9387_1_l.jpg":"images/image-21.jpg","https://cdn.jeepe.jp/uploads/public_image/image/1791/normal_aa06acd2-95dc-460e-b139-a95a9d126e23.jpg":"images/image-22.jpg","https://assets.st-note.com/production/uploads/images/175464346/rectangle_large_type_2_3ee8b32c2c163ae1afe06c818c4b8a50.jpeg?fit=bounds&height=2000&quality=85&width=2000":"images/image-23.jpg","https://rimage.gnst.jp/livejapan.com/public/article/detail/a/30/00/a3000038/img/en/a3000038_parts_5d428edb34244.jpg?20200721194403=&q=80":"images/image-24.jpg","https://img.travel.rakuten.co.jp/share/HOTEL/187620/187620.jpg":"images/image-25.jpg","https://aomori-tourism.com/lsc/upfile/articleDetail/0000/2282/2282_3_l.jpg":"images/image-26.jpg","https://graceblog.tw/wp-content/uploads/2023/01/goryokaku-tower-8210.jpg":"images/image-27.jpg","https://en.kantaro-hakodate.com/images/index_content_pic06.jpg":"images/image-08.png","https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/0300/10300_6_l.jpg":"images/image-29.jpg","https://media.hoshinoresorts.com/image/authenticated/s--KQrTr4vW--/c_fill%2Cg_auto%2Ch_630%2Cw_1200/f_auto%2Cq_auto/v1728956687/056_%E5%86%AC_%E6%B9%96%E6%9C%88%E6%A9%8B%E3%81%A8%E9%A7%92%E3%82%B1%E5%B2%B3_fra5wx.jpg":"images/image-30.jpg","https://hakodate-kankou.com/media/2021/10/IMG_3694-1.jpg":"images/image-31.jpg","https://www.visit-hokkaido.jp/lsc/upfile/courseDetail/0000/1101/1101_1_l.jpg":"images/image-32.jpg"};
+  function localizeStoredImages(days){for(const day of days||[])for(const item of day.items||[])if(legacyImagePaths[item.image])item.image=legacyImagePaths[item.image]}
+  function loadState(){try{const raw=localStorage.getItem(STORE_KEY);if(!raw)return structuredClone(defaults);const obj=JSON.parse(raw);if(['1.0','1.1','1.2','1.3','1.4','1.5'].includes(obj.version)){const people=Array.isArray(obj.people)?obj.people:[],hasExpenses=Array.isArray(obj.expenses)&&obj.expenses.length>0,legacy=obj.version!=='1.5',days=Array.isArray(obj.days)?obj.days:structuredClone(initialDays);if(people.length===2&&((people[0]==='A'&&people[1]==='B')||(people[0]==='旅伴1'&&people[1]==='旅伴2'))&&!hasExpenses)people.splice(0,people.length);else if(people.length===2&&people[0]==='A'&&people[1]==='B')people.splice(0,2,'旅伴1','旅伴2');if(legacy){upgradeFirstNight(days);upgradeItineraryImages(days)}localizeStoredImages(days);return {...structuredClone(defaults),...obj,version:VERSION,days,people,expenses:Array.isArray(obj.expenses)?obj.expenses:[],history:Array.isArray(obj.history)?obj.history:[],dayDraft:legacy?null:obj.dayDraft||null}}return structuredClone(defaults)}catch(e){return structuredClone(defaults)}}
   function save(){state.version=VERSION;state.savedAt=new Date().toISOString();try{localStorage.setItem(STORE_KEY,JSON.stringify(state));setSaveIndicator(true);const el=document.getElementById('savedAtLabel');if(el)el.textContent=new Date(state.savedAt).toLocaleString('zh-TW')}catch(e){setSaveIndicator(false)}}
   let saveTimer;function queueSave(){setSaveIndicator('saving');clearTimeout(saveTimer);saveTimer=setTimeout(()=>save(),180)}
   function setSaveIndicator(v){const el=document.getElementById('saveState');if(!el)return;el.textContent=v==='saving'?'儲存中…':v?'💾 已儲存':'⚠️ 儲存失敗';el.style.background=v===false?'#f4e7e2':v==='saving'?'#f3eee2':'#e5ebe2'}

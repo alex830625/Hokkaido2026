@@ -1,0 +1,194 @@
+[
+  {
+    "url": "https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1178/11178_3_l.jpg",
+    "file": "image-01.jpg",
+    "bytes": 319976,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://storage.googleapis.com/studio-design-asset-files/projects/6kq9zZ3Lap/s-2000x1334_v-frms_webp_9a38eacf-789e-42ef-83ce-1beb2b61a182_small.webp",
+    "file": "image-02.webp",
+    "bytes": 27394,
+    "content_type": "image/webp"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Hakodate-Airport-02.jpg",
+    "file": "image-03.jpg",
+    "bytes": 418537,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://www.jr-inn.jp/hakodate/img/rooms/room2.png",
+    "file": "image-04.png",
+    "bytes": 972097,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://img.retty.me/img_repo/l/01/20622696.jpg",
+    "file": "image-05.jpg",
+    "bytes": 41748,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://hakodate-kankou.com/media/2021/10/IMG_3716.jpg",
+    "file": "image-06.jpg",
+    "bytes": 467454,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://www.hakodate.travel/en/wp-content/uploads/2022/11/Hakodate_Hachimangu_Shrine-2-1024x768.jpg",
+    "file": "image-07.jpg",
+    "bytes": 228822,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://sports-hakodate.jp/images/hakoreco08_img.png",
+    "file": "image-08.png",
+    "bytes": 396169,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://static.gltjp.com/glt/data/article/12000/11745/20180205_191642_518a03c5_w1920.webp",
+    "file": "image-09.webp",
+    "bytes": 259304,
+    "content_type": "image/webp"
+  },
+  {
+    "url": "https://images.locationscout.net/2022/01/mt-hakodate-observatory-hokkaido-japan-japan-p15f.webp?h=1400&q=83",
+    "file": "image-10.jpg",
+    "bytes": 558953,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://static.gltjp.com/glt/data/article/21000/20462/20231008_112414_7f4bdea9_w1920.webp",
+    "file": "image-11.webp",
+    "bytes": 273024,
+    "content_type": "image/webp"
+  },
+  {
+    "url": "https://aomori-tourism.com/lsc/upfile/spot/0000/1664/1664_104_m.jpg",
+    "file": "image-12.jpg",
+    "bytes": 56168,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tatebayashihappy/20191022/20191022200828.jpg",
+    "file": "image-13.jpg",
+    "bytes": 897742,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://my10.jp/images/sannai-maruyama-ruins-01.jpg",
+    "file": "image-14.jpg",
+    "bytes": 198551,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://hoshinoresorts.com/jp/sp/noresoreaomoritabi_campaign/assets/images/aomoritabi/article/post1/section_4-1.jpg",
+    "file": "image-15.jpg",
+    "bytes": 447168,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2025-05/aomori-city_13.jpg?itok=wgPWxkEq",
+    "error": "The read operation timed out",
+    "file": "image-15.jpg",
+    "note": "Timed out repeatedly; substituted downloaded Aomori travel image."
+  },
+  {
+    "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/masa-muro/20230927/20230927180733.jpg",
+    "file": "image-17.jpg",
+    "bytes": 1047386,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://aomori-tourism.com/lsc/api/photo/?src=8262",
+    "file": "image-18.jpg",
+    "bytes": 100215,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://aomori-tourism.com/lsc/upfile/spot/0000/0810/810_1_l.jpg",
+    "error": "HTTP Error 404: Not Found",
+    "file": "image-18.jpg",
+    "note": "Source returned 404; substituted downloaded Aomori station photo."
+  },
+  {
+    "url": "https://aomori-tourism.com/lsc/api/photo/?src=1038",
+    "file": "image-20.jpg",
+    "bytes": 204699,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://aomori-tourism.com/lsc/upfile/spot/0000/9387/9387_1_l.jpg",
+    "file": "image-21.jpg",
+    "bytes": 65921,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://cdn.jeepe.jp/uploads/public_image/image/1791/normal_aa06acd2-95dc-460e-b139-a95a9d126e23.jpg",
+    "file": "image-22.jpg",
+    "bytes": 328115,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://assets.st-note.com/production/uploads/images/175464346/rectangle_large_type_2_3ee8b32c2c163ae1afe06c818c4b8a50.jpeg?fit=bounds&height=2000&quality=85&width=2000",
+    "file": "image-23.jpg",
+    "bytes": 368959,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/30/00/a3000038/img/en/a3000038_parts_5d428edb34244.jpg?20200721194403=&q=80",
+    "file": "image-24.jpg",
+    "bytes": 75135,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://img.travel.rakuten.co.jp/share/HOTEL/187620/187620.jpg",
+    "file": "image-25.jpg",
+    "bytes": 1750607,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://aomori-tourism.com/lsc/upfile/articleDetail/0000/2282/2282_3_l.jpg",
+    "file": "image-26.jpg",
+    "bytes": 397304,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://graceblog.tw/wp-content/uploads/2023/01/goryokaku-tower-8210.jpg",
+    "file": "image-27.jpg",
+    "bytes": 245907,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://en.kantaro-hakodate.com/images/index_content_pic06.jpg",
+    "error": "non-image content type text/html",
+    "file": "image-08.png",
+    "note": "Source returned HTML instead of an image; substituted downloaded Hakodate market photo."
+  },
+  {
+    "url": "https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/0300/10300_6_l.jpg",
+    "file": "image-29.jpg",
+    "bytes": 497717,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://media.hoshinoresorts.com/image/authenticated/s--KQrTr4vW--/c_fill%2Cg_auto%2Ch_630%2Cw_1200/f_auto%2Cq_auto/v1728956687/056_%E5%86%AC_%E6%B9%96%E6%9C%88%E6%A9%8B%E3%81%A8%E9%A7%92%E3%82%B1%E5%B2%B3_fra5wx.jpg",
+    "file": "image-30.jpg",
+    "bytes": 159693,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://hakodate-kankou.com/media/2021/10/IMG_3694-1.jpg",
+    "file": "image-31.jpg",
+    "bytes": 531135,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://www.visit-hokkaido.jp/lsc/upfile/courseDetail/0000/1101/1101_1_l.jpg",
+    "file": "image-32.jpg",
+    "bytes": 350840,
+    "content_type": "image/jpeg"
+  }
+]
