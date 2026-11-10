@@ -162,7 +162,7 @@
       {time:'14:00前後',name:'前往函館機場',place:'函館空港',transport:'從函館站搭機場巴士或計程車；巴士約 20–40 分鐘視路線而異，冬季交通不穩時提早出發。',mapQuery:'Hakodate Airport'},
       {time:'18:00',name:'起飛回台灣',place:'函館空港',transport:'依航空公司報到與出境要求辦理。',mapQuery:'Hakodate Airport'}]}
   ];
-  const managedItineraryImages=new Set(["images/a-factory-aomori.jpg","images/image-01.jpg","images/image-02.webp","images/image-03.jpg","images/image-04.png","images/image-05.jpg","images/image-06.jpg","images/image-07.jpg","images/image-08.png","images/image-09.webp","images/image-10.jpg","images/image-11.webp","images/image-12.jpg","images/image-13.jpg","images/image-14.jpg","images/image-15.jpg","images/image-17.jpg","images/image-18.jpg","images/image-20.jpg","images/image-21.jpg","images/image-22.jpg","images/image-23.jpg","images/image-24.jpg","images/image-25.jpg","images/image-26.jpg","images/image-27.jpg","images/image-29.jpg","images/image-30.jpg","images/image-31.jpg","images/image-32.jpg","images/kantaro-sushi.jpg","images/market-hakodate.jpg","images/stay-jrinn-second-room.png","images/stay-relabo-exterior.webp"]);
+  const managedItineraryImages=new Set(["images/a-factory-aomori.jpg","images/image-01.jpg","images/image-02.webp","images/image-03.jpg","images/image-04.png","images/image-05.jpg","images/image-06.jpg","images/image-07.jpg","images/image-08.png","images/image-09.webp","images/image-10.jpg","images/image-11.webp","images/image-12.jpg","images/image-13.jpg","images/image-14.jpg","images/image-15.jpg","images/image-17.jpg","images/image-18.jpg","images/image-20.jpg","images/image-21.jpg","images/image-22.jpg","images/image-23.jpg","images/image-24.jpg","images/image-25.jpg","images/image-26.jpg","images/image-27.jpg","images/image-29.jpg","images/image-30.jpg","images/image-31.jpg","images/image-32.jpg","images/kantaro-sushi.jpg","images/market-hakodate.jpg","images/stay-jrinn-lounge.jpg","images/stay-relabo-exterior.webp"]);
   function applyStayInfo(days){
     const stayNotes={
       d1212:'住宿：JR INN Hakodate（12/12–12/14，2 晚）。',d1213:'住宿：JR INN Hakodate（12/12–12/14，2 晚）。',
@@ -204,7 +204,7 @@
     for(const day of days||[])for(const item of day.items||[]){
       const text=[item.name,item.place,item.mapQuery].join(' ');let candidate='';
       if(day.id==='d1212'&&/JR INN Hakodate/i.test(text))candidate='images/image-04.png';
-      else if(day.id==='d1218'&&/JR INN Hakodate/i.test(text))candidate='images/stay-jrinn-second-room.png';
+      else if(day.id==='d1218'&&/JR INN Hakodate/i.test(text))candidate='images/stay-jrinn-lounge.jpg';
       else if(day.id==='d1220'&&/JR INN Hakodate/i.test(text))candidate='';
       else if(day.id==='d1214'&&/ReLabo|RELABO/i.test(text))candidate='images/stay-relabo-exterior.webp';
       else if(day.id==='d1216'&&/Dormy Inn/i.test(text))candidate='images/image-25.jpg';
